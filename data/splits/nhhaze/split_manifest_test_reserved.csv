@@ -1,0 +1,6 @@
+split,hazy_path,gt_path,group_id,match_type
+test_reserved,NH-HAZE/51_hazy.png,NH-HAZE/51_GT.png,NH-HAZE/51_GT.png,key:51
+test_reserved,NH-HAZE/52_hazy.png,NH-HAZE/52_GT.png,NH-HAZE/52_GT.png,key:52
+test_reserved,NH-HAZE/53_hazy.png,NH-HAZE/53_GT.png,NH-HAZE/53_GT.png,key:53
+test_reserved,NH-HAZE/54_hazy.png,NH-HAZE/54_GT.png,NH-HAZE/54_GT.png,key:54
+test_reserved,NH-HAZE/55_hazy.png,NH-HAZE/55_GT.png,NH-HAZE/55_GT.png,key:55

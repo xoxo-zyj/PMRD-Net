@@ -1,0 +1,434 @@
+[
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/train_ambiguous.csv",
+    "bytes": 64,
+    "sha256": "c2a885d4018655afa481064d32e0c9cb6fa65ce721883d0ac10993c5affca5d5",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/train_pairs.csv",
+    "bytes": 13426733,
+    "sha256": "3d575685ccb673fd8430eb1a7ac8deb20c2a8053aa9b63b09dd94f2be4a59ace",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/train_unmatched.csv",
+    "bytes": 64,
+    "sha256": "c2a885d4018655afa481064d32e0c9cb6fa65ce721883d0ac10993c5affca5d5",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/val_ambiguous.csv",
+    "bytes": 64,
+    "sha256": "c2a885d4018655afa481064d32e0c9cb6fa65ce721883d0ac10993c5affca5d5",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/val_pairs.csv",
+    "bytes": 1183823,
+    "sha256": "d242953b5894ee3faa4b8f2cb15a951548d14b11e2df6286edd32af864db140f",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/pair_reports/val_unmatched.csv",
+    "bytes": 64,
+    "sha256": "c2a885d4018655afa481064d32e0c9cb6fa65ce721883d0ac10993c5affca5d5",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/general_best.pth",
+    "bytes": 69073437,
+    "sha256": "7055740a03a97ae71730a30b49a1669d645c0989f12563757009c3a98fcb6a79",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/general_latest.pth",
+    "bytes": 69083805,
+    "sha256": "fcc9e62b86626714e62b79404b7ba373516183496893ac1f15d376d004ede53d",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/latest_route_usage.json",
+    "bytes": 552,
+    "sha256": "07ef8fea788e170a7e10e46e2b44f916c574e1d4a9ee264aecf3ac9f18778a8c",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/__init__.py",
+    "bytes": 148,
+    "sha256": "1850012917b18904a13f0936a23feb2fd4909250c0bc17d14e148722a9c6c675",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/__init__.py.backup_before_fix",
+    "bytes": 102,
+    "sha256": "8557be7f7db6b1ae975a9588ff3da8f3ee7535949fbb613adf0413e02a104962",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/backbone.py",
+    "bytes": 12455,
+    "sha256": "027a0bad8beea923d0992d3d75a9033bdd14e7e3fdb1e60f9b6561b250b40ccd",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/cls.py",
+    "bytes": 4518,
+    "sha256": "c5c8367085f4f774b98f3c32d97a8b0c368427a38d8910e6c5dc00cc60e100ec",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/dc_ae.py",
+    "bytes": 19205,
+    "sha256": "51c5cd22aeac737c677c1b1d809ef051da41915248ced7742eac316a7da7dded",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/sam.py",
+    "bytes": 25664,
+    "sha256": "8f208f0fddd04cc20543f8a9acedf334fdf14a0ce7dfe59b4d256a226cd0c991",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit/seg.py",
+    "bytes": 10507,
+    "sha256": "180dcd467b2ba7ad878831bb0dbe3f7a8fa50612c33c8250ecc4ff4eed6eeb93",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/__init__.py",
+    "bytes": 128,
+    "sha256": "db31cc8e8035c24a03a7a0ef18c9db85759bb0e618a4a2cbec07bb05d5d9dfc7",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/efficientvit_b1_r256.pt",
+    "bytes": 36575137,
+    "sha256": "e4c43a5106f6cbb8c9d8acc5e0813d1c6d2156e869b25ed093b7917813e94aa5",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/losses.py",
+    "bytes": 10149,
+    "sha256": "b39c3968eeaa123860cbdaf7706f0074f3ffd51e5c761cacf1d8e637c75bc7dc",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/model.py",
+    "bytes": 42626,
+    "sha256": "0c91c686ebd3eeaeae01adde481af3ab694c3af45dad56abfa3afb45a394fc9d",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/future_process/vmamba.py",
+    "bytes": 103421,
+    "sha256": "00ce75a4ade90d89e8e3072f2150d95619db520dc000574b2a5425aa15bc6361",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/generate_prior/__init__.py",
+    "bytes": 245,
+    "sha256": "62bac034bc89b55c020121dbceb00841d9d09c8ad4c236238df509b333ea465f",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/generate_prior/generate_prior.py",
+    "bytes": 8246,
+    "sha256": "46c1f325e2fba7945de29be80a744cbc109e081a09569b46e8bae1ce6b656a64",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/isp/__init__.py",
+    "bytes": 173,
+    "sha256": "baaaf23c64561fe244ee0f1bd621bf5b65af59588ae93d7b1d3009e48f687fea",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/isp/image_process_tools.py",
+    "bytes": 15540,
+    "sha256": "29874398f07e7841c6f32ce3b3b5eed7bb4f7be14fcaf6a1a4bb9748d14dcdd8",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/MSDSPDD_Final_Flowchart.png",
+    "bytes": 576752,
+    "sha256": "a72ac5d7123bd697731bfe133a69c7d7bd001663de8a3d37e3e0277be7358528",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/MSDSPDD_Final_Flowchart.svg",
+    "bytes": 25794,
+    "sha256": "93df0bc3d35e2ed62a9758bbd07a03a8450a15fd5f0ef5aebc45d8f409e77993",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/README_FINAL.md",
+    "bytes": 2488,
+    "sha256": "60027f1e44a04a1602a3378fbddfc577e9bd28c8cb63ad362ea54c6342f6d798",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/finetune_msdspdd_v2_5datasets.py",
+    "bytes": 48051,
+    "sha256": "b30356153b3154fce746b34c6c9c13fd55b90133a66722c73d9dcce216e27981",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/finetune_msdspdd_v2_5datasets_epoch_checked_clean.py",
+    "bytes": 67195,
+    "sha256": "d8a2cbb1c9442d01913ff709831b99b277b80bbc107f4c954c3dd08f33e6762b",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/finetune_msdspdd_v2_5datasets_epoch_checked_clean.py ",
+    "bytes": null,
+    "sha256": "d8a2cbb1c9442d01913ff709831b99b277b80bbc107f4c954c3dd08f33e6762b",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/finetune_msdspdd_v2_5datasets_epoch_final.py",
+    "bytes": 46775,
+    "sha256": "73c4d49f336ebecf39e12f879e5c1a6636508a39e5c322bf5e84ea18feb24a9f",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/msdspdd_complete_general.py",
+    "bytes": 71418,
+    "sha256": "4bbbde015aac8d4f7c2b9e3568fa156c54fb52c05738df3a8c6200c0aea2b7e1",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/smoke_test_final.py",
+    "bytes": 1753,
+    "sha256": "d5f0d495995a5ac50db07886d4505aec72c5131b27c3e02d70b75c8d232d696a",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/test_msdspdd_v2_all_protocols_4metrics.py",
+    "bytes": 38909,
+    "sha256": "9fd8c8004128fd084d9aa204376323b4284de535860a6efbf8fb0081dccec8d6",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_Final_Full/train_integration_example.py",
+    "bytes": 768,
+    "sha256": "b730dfdcb85d28857d79e545012ac4f8482424a8554684b2e78ee9f1bef85f92",
+    "preserved_in": "MSDSPDD_GitHub_Repository.zip (verbatim content)"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/split_manifest_train.csv",
+    "bytes": 3188,
+    "sha256": "301b606ee8865d4be9622cb02fc076107667cd99d5f829a5cfdf325b447cb42b",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/split_manifest_val.csv",
+    "bytes": 823,
+    "sha256": "b8c42c10aa63ce3b19bb3dc711e24d4c9059a42d54266da3b3b92ffd690692f3",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/split_manifest_test_reserved.csv",
+    "bytes": 873,
+    "sha256": "e8f00eb93ef405d78ad987a180f47327db2315ab10f86a1a7d040e0ef802fa62",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/dehaze_best.pth",
+    "bytes": 62243852,
+    "sha256": "3e1f8b53f07e25299b107c47c53c352cd8452dada77f1e9c835c39b379393f5e",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/dehaze_best_model_only.pth",
+    "bytes": 23096425,
+    "sha256": "01f10a813bd3315f2d74bb7ee75085e97c6939aa198142b55bca5e70f0cecc51",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/dehaze_latest.pth",
+    "bytes": 69064413,
+    "sha256": "ca137b616638f28c42c4c18394c09854e60a7a5c67692f9d8daf142c70f47602",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/history.csv",
+    "bytes": 8090,
+    "sha256": "34870e8b446999f43fd933fc0379365fc0b750b50b17062af336e036e8aa7be3",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/split_manifest_train.csv",
+    "bytes": 5683,
+    "sha256": "11453d20a43c12039c9a88f07e435542e164a71b28ce8370e7fd63041d380fe1",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/split_manifest_val.csv",
+    "bytes": 843,
+    "sha256": "12c1009f093775ab5091b08c99273b8d545d1456827a064501343634c79ba1a6",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/split_manifest_test_reserved.csv",
+    "bytes": 893,
+    "sha256": "29726cdb8c7fbc306da3d4db1e9bc3a05f1bec87d253594e29f4427f0f439033",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/dehaze_best.pth",
+    "bytes": 69053981,
+    "sha256": "6f8cdc5b2c867a80835bf600baaca80173904c8c4eb7f355e18ec956ee2fbafa",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/dehaze_best_model_only.pth",
+    "bytes": 23096425,
+    "sha256": "06008c4bd5412c994432ff755fc6b082902a2eafe3420fe78fbcedfe47faa426",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/dehaze_latest.pth",
+    "bytes": 69064413,
+    "sha256": "2a383b518029b0b4c6eb88b9011d8f04b9240642bb925ff1b558200000e81b93",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/history.csv",
+    "bytes": 19771,
+    "sha256": "4179f7bb0ecaaf074adefa244b68fd19c1ad0480cdfeaabba6cbdf43a752ce40",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/split_manifest_train.csv",
+    "bytes": 5493,
+    "sha256": "28a75b9b0a670e9802dc3db5363425d9c7871700de1a4a868c47531248fcbdc7",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/split_manifest_val.csv",
+    "bytes": 643,
+    "sha256": "44ed63f43286e6c5e154e3f933a5ac827c0aaf77432458c84cb1bdd67bcf910a",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/split_manifest_test_reserved.csv",
+    "bytes": 693,
+    "sha256": "bb7c082b21c98b054853680261211d31f801d1bd8a66634eb781336db9b615d5",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/dehaze_best.pth",
+    "bytes": 69053981,
+    "sha256": "5063237a9387ecc3cb3dc0f54a0de6ffdd3af1291582a788ac47bb3e4c953cdf",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/dehaze_best_model_only.pth",
+    "bytes": 23096425,
+    "sha256": "8d54bd74c43035a8bd1b68bd9223af2f32e692a42911fd87dd68058d0ba19afe",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/dehaze_latest.pth",
+    "bytes": 69064413,
+    "sha256": "e7ff8531bb49cb02590361e1d4fce70b5f05017ce6d77e93f5a79ad661754c17",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/history.csv",
+    "bytes": 12117,
+    "sha256": "5f0d86770748ccbec43e1e9cb1c268f5514eb035680fe9ea7285e147b6114c8f",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/split_manifest_train.csv",
+    "bytes": 1910130,
+    "sha256": "fa8d983a376e517df5d4872a672142ef3f13790978226daf50b9779e6cb50bae",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/split_manifest_val.csv",
+    "bytes": 99676,
+    "sha256": "ac942e422f09a7a6ee21e9b873ea1340b7eacee6212938ae4e44c0be517fc9ac",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/split_manifest_test_reserved.csv",
+    "bytes": 48,
+    "sha256": "9217a5a9ed4a9063912e4d27b5870408b498d261f586ec8b35a8adf6ff84a4ef",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/dehaze_best.pth",
+    "bytes": 69053981,
+    "sha256": "a35191cc42d47fabb545e00bc961122e04d15fea4451795052f954eff4b8fb27",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/dehaze_best_model_only.pth",
+    "bytes": 23096425,
+    "sha256": "0281b84980326baccdb1a28ac15f67f0b2e0b2ebb18403be4d948d80dd817fc0",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/dehaze_latest.pth",
+    "bytes": 69064413,
+    "sha256": "e5af30d55836e1d58c59ed561540370e0ae9f45aa70c7b429be63205f9d3c788",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/history.csv",
+    "bytes": 13882,
+    "sha256": "7a8863a7d9b3678cf920e53eb8bfb053c700c4f1735cc2ffd29beba240030256",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/split_manifest_train.csv",
+    "bytes": 11035314,
+    "sha256": "6445d5f4c4afcc223301441ebf5f577d8a39047ae0dd05d43d714a8d2c75a90b",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/split_manifest_val.csv",
+    "bytes": 110248,
+    "sha256": "6c47d86be64cc28d50e9d3bf7e37f77bb2742ce49b10c529973ba81acbcccd39",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/split_manifest_test_reserved.csv",
+    "bytes": 48,
+    "sha256": "9217a5a9ed4a9063912e4d27b5870408b498d261f586ec8b35a8adf6ff84a4ef",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/dehaze_best.pth",
+    "bytes": 62243916,
+    "sha256": "5637ae17a5a9f9d52a889a4944bd1f4bc598a3466989a1e12b49bc14b13b780a",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/dehaze_best_model_only.pth",
+    "bytes": 23096425,
+    "sha256": "112ad5cade279dfbc1b7a2e133e471185a2d597e1d07160d10958525778a0ee7",
+    "preserved_in": "MSDSPDD_Model_Weights.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/dehaze_latest.pth",
+    "bytes": 69064413,
+    "sha256": "79730829ace0fe8949f8431a51b01cc419f0b838b727b730ce798c08f6ea35be",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/history.csv",
+    "bytes": 8098,
+    "sha256": "d76d65d2effb77df6f1ab5f606f8b9c798d03639dccf2e47bf999af5cebeeb0f",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  },
+  {
+    "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/split_audit_summary.csv",
+    "bytes": 237,
+    "sha256": "82ef9e224a33df5c4a817a258e526ef27a79c427dd697c9b0ff102b44240f974",
+    "preserved_in": "MSDSPDD_Training_Archive.zip"
+  }
+]

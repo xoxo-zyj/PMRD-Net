@@ -1,0 +1,13 @@
+# Install a matched PyTorch/torchvision pair first; see docs/INSTALL.md.
+numpy>=1.24,<2
+Pillow>=9.5
+tqdm>=4.65
+einops>=0.6
+timm==0.4.12
+fvcore>=0.1.5
+pytorch-msssim>=1.0
+scikit-image>=0.21
+packaging>=23
+ninja>=1.11
+yacs>=0.1.8
+termcolor>=2

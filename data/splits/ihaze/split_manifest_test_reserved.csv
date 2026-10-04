@@ -1,0 +1,6 @@
+split,hazy_path,gt_path,group_id,match_type
+test_reserved,I-HAZY/hazy/31_indoor_hazy.jpg,I-HAZY/GT/31_indoor_GT.jpg,I-HAZY/GT/31_indoor_GT.jpg,key:31_indoor
+test_reserved,I-HAZY/hazy/32_indoor_hazy.jpg,I-HAZY/GT/32_indoor_GT.jpg,I-HAZY/GT/32_indoor_GT.jpg,key:32_indoor
+test_reserved,I-HAZY/hazy/33_indoor_hazy.jpg,I-HAZY/GT/33_indoor_GT.jpg,I-HAZY/GT/33_indoor_GT.jpg,key:33_indoor
+test_reserved,I-HAZY/hazy/34_indoor_hazy.jpg,I-HAZY/GT/34_indoor_GT.jpg,I-HAZY/GT/34_indoor_GT.jpg,key:34_indoor
+test_reserved,I-HAZY/hazy/35_indoor_hazy.jpg,I-HAZY/GT/35_indoor_GT.jpg,I-HAZY/GT/35_indoor_GT.jpg,key:35_indoor

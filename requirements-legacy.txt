@@ -1,0 +1,8 @@
+-r requirements-eval.txt
+# Only needed by archived, superseded scripts/modules.
+psutil
+GPUtil
+piq
+torchmetrics
+omegaconf
+opencv-python

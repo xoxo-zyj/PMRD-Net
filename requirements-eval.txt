@@ -1,0 +1,3 @@
+-r requirements.txt
+# Packaging baseline: newer pyiqa releases require a newer timm.
+pyiqa==0.1.12

@@ -1,0 +1,54 @@
+{
+  "release_asset": "MSDSPDD_Model_Weights.zip",
+  "weights": [
+    {
+      "file": "future_process/efficientvit_b1_r256.pt",
+      "bytes": 36575137,
+      "sha256": "e4c43a5106f6cbb8c9d8acc5e0813d1c6d2156e869b25ed093b7917813e94aa5",
+      "source": "MSDSPDD_Final_Full/future_process/efficientvit_b1_r256.pt",
+      "kind": "backbone"
+    },
+    {
+      "file": "checkpoints/general/general_best.pth",
+      "bytes": 69073437,
+      "sha256": "7055740a03a97ae71730a30b49a1669d645c0989f12563757009c3a98fcb6a79",
+      "source": "MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/general_best.pth",
+      "kind": "general checkpoint, with training state"
+    },
+    {
+      "file": "checkpoints/finetuned/ihaze/dehaze_best_model_only.pth",
+      "bytes": 23096425,
+      "sha256": "01f10a813bd3315f2d74bb7ee75085e97c6939aa198142b55bca5e70f0cecc51",
+      "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ihaze/dehaze_best_model_only.pth",
+      "kind": "model-only"
+    },
+    {
+      "file": "checkpoints/finetuned/ohaze/dehaze_best_model_only.pth",
+      "bytes": 23096425,
+      "sha256": "06008c4bd5412c994432ff755fc6b082902a2eafe3420fe78fbcedfe47faa426",
+      "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/ohaze/dehaze_best_model_only.pth",
+      "kind": "model-only"
+    },
+    {
+      "file": "checkpoints/finetuned/nhhaze/dehaze_best_model_only.pth",
+      "bytes": 23096425,
+      "sha256": "8d54bd74c43035a8bd1b68bd9223af2f32e692a42911fd87dd68058d0ba19afe",
+      "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/nhhaze/dehaze_best_model_only.pth",
+      "kind": "model-only"
+    },
+    {
+      "file": "checkpoints/finetuned/sots_indoor/dehaze_best_model_only.pth",
+      "bytes": 23096425,
+      "sha256": "0281b84980326baccdb1a28ac15f67f0b2e0b2ebb18403be4d948d80dd817fc0",
+      "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_indoor/dehaze_best_model_only.pth",
+      "kind": "model-only"
+    },
+    {
+      "file": "checkpoints/finetuned/sots_outdoor/dehaze_best_model_only.pth",
+      "bytes": 23096425,
+      "sha256": "112ad5cade279dfbc1b7a2e133e471185a2d597e1d07160d10958525778a0ee7",
+      "source": "MSDSPDD_V2_finetune_5datasets_epoch_final/sots_outdoor/dehaze_best_model_only.pth",
+      "kind": "model-only"
+    }
+  ]
+}

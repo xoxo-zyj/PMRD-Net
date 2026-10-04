@@ -1,0 +1,6 @@
+split,hazy_path,gt_path,group_id,match_type
+test_reserved,O-HAZE/hazy/41_outdoor_hazy.jpg,O-HAZE/GT/41_outdoor_GT.jpg,O-HAZE/GT/41_outdoor_GT.jpg,key:41_outdoor
+test_reserved,O-HAZE/hazy/42_outdoor_hazy.jpg,O-HAZE/GT/42_outdoor_GT.jpg,O-HAZE/GT/42_outdoor_GT.jpg,key:42_outdoor
+test_reserved,O-HAZE/hazy/43_outdoor_hazy.jpg,O-HAZE/GT/43_outdoor_GT.jpg,O-HAZE/GT/43_outdoor_GT.jpg,key:43_outdoor
+test_reserved,O-HAZE/hazy/44_outdoor_hazy.jpg,O-HAZE/GT/44_outdoor_GT.jpg,O-HAZE/GT/44_outdoor_GT.jpg,key:44_outdoor
+test_reserved,O-HAZE/hazy/45_outdoor_hazy.jpg,O-HAZE/GT/45_outdoor_GT.jpg,O-HAZE/GT/45_outdoor_GT.jpg,key:45_outdoor

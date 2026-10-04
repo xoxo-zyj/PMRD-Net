@@ -1,0 +1,6 @@
+﻿task,train,val,test_reserved,hazy_overlap,gt_overlap,group_overlap,status
+ihaze,20,5,5,0,0,0,passed
+ohaze,35,5,5,0,0,0,passed
+nhhaze,45,5,5,0,0,0,passed
+sots_indoor,11980,630,0,0,0,0,passed
+sots_outdoor,65798,665,0,0,0,0,passed

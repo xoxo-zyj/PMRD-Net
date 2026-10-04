@@ -1,0 +1,9 @@
+{
+  "I-HAZY": "I-HAZY",
+  "O-HAZE": "O-HAZE",
+  "NH-HAZE": "NH-HAZE",
+  "train/train/ITS_v2": "RESIDE/ITS/hazy",
+  "remade_clear/ITS_v2": "RESIDE/ITS/clear",
+  "train/train/OTS_BETA": "RESIDE/OTS_BETA/hazy",
+  "remade_clear/OTS_BETA": "RESIDE/OTS_BETA/clear"
+}

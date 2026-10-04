@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows",
+  "python_sources_compiled": 30,
+  "original_sources_preserved_verbatim": 21,
+  "portable_split_csvs": 15,
+  "pair_records_preserved": 79203,
+  "regression_tests_passed": 5,
+  "all_split_local_paths_materialized": true,
+  "git_ignore_rules_verified": true,
+  "local_markdown_links_checked": 24,
+  "weight_files_preserved": 18,
+  "inference_weights_sha256_verified": 7,
+  "all_three_assets_sha256_and_crc_verified": true,
+  "gpu_training_or_forward_verified": false,
+  "dataset_images_available": false,
+  "github_actions_run_locally": false,
+  "note": "Environment import preflight correctly reports missing Torch/CUDA; dependency baselines require runtime verification on a CUDA host."
+}

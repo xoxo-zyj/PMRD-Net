@@ -1,0 +1,107 @@
+[
+  {
+    "dataset": "ihaze",
+    "file": "split_manifest_test_reserved.csv",
+    "pairs": 5,
+    "source_sha256": "e8f00eb93ef405d78ad987a180f47327db2315ab10f86a1a7d040e0ef802fa62",
+    "published_sha256": "0e13a61a6e539b7b2d0a54f09cc44fb3a1045df7fbb62d0478e4a708fb890aff"
+  },
+  {
+    "dataset": "ihaze",
+    "file": "split_manifest_train.csv",
+    "pairs": 20,
+    "source_sha256": "301b606ee8865d4be9622cb02fc076107667cd99d5f829a5cfdf325b447cb42b",
+    "published_sha256": "1f8f8953f3e89029cc080d23085691e36b2eb374256ab829d6efddc6104105c8"
+  },
+  {
+    "dataset": "ihaze",
+    "file": "split_manifest_val.csv",
+    "pairs": 5,
+    "source_sha256": "b8c42c10aa63ce3b19bb3dc711e24d4c9059a42d54266da3b3b92ffd690692f3",
+    "published_sha256": "8094c424cc7f7aa72e9f60ec4dd0d7f345eaf8ec251efd7617e120e24f08fe84"
+  },
+  {
+    "dataset": "nhhaze",
+    "file": "split_manifest_test_reserved.csv",
+    "pairs": 5,
+    "source_sha256": "bb7c082b21c98b054853680261211d31f801d1bd8a66634eb781336db9b615d5",
+    "published_sha256": "e8b26ad1b898da12d5a955980256147dceaf855a4ef5e027772bb261d2d878f2"
+  },
+  {
+    "dataset": "nhhaze",
+    "file": "split_manifest_train.csv",
+    "pairs": 45,
+    "source_sha256": "28a75b9b0a670e9802dc3db5363425d9c7871700de1a4a868c47531248fcbdc7",
+    "published_sha256": "212f7c24e5d81b32f9addcd30fde2c13b7ed0d9a1506910dea4115694cbac52a"
+  },
+  {
+    "dataset": "nhhaze",
+    "file": "split_manifest_val.csv",
+    "pairs": 5,
+    "source_sha256": "44ed63f43286e6c5e154e3f933a5ac827c0aaf77432458c84cb1bdd67bcf910a",
+    "published_sha256": "c43742c0cc49cf58e36b3ca0c80e69819981188e7f28b9e14164f413aeba89b5"
+  },
+  {
+    "dataset": "ohaze",
+    "file": "split_manifest_test_reserved.csv",
+    "pairs": 5,
+    "source_sha256": "29726cdb8c7fbc306da3d4db1e9bc3a05f1bec87d253594e29f4427f0f439033",
+    "published_sha256": "1a16d33f7f851bb57ddc4d515832cdc764ae2feca18430da7932f74111144887"
+  },
+  {
+    "dataset": "ohaze",
+    "file": "split_manifest_train.csv",
+    "pairs": 35,
+    "source_sha256": "11453d20a43c12039c9a88f07e435542e164a71b28ce8370e7fd63041d380fe1",
+    "published_sha256": "427aea31219721d87a91e8c0366f29976b8174ef58ed52283cf2eccccf6836c1"
+  },
+  {
+    "dataset": "ohaze",
+    "file": "split_manifest_val.csv",
+    "pairs": 5,
+    "source_sha256": "12c1009f093775ab5091b08c99273b8d545d1456827a064501343634c79ba1a6",
+    "published_sha256": "94ce679e987fe86d87e8b8f37c6900f2a8aba150dc493eb54a331ece970bb945"
+  },
+  {
+    "dataset": "sots_indoor",
+    "file": "split_manifest_test_reserved.csv",
+    "pairs": 0,
+    "source_sha256": "9217a5a9ed4a9063912e4d27b5870408b498d261f586ec8b35a8adf6ff84a4ef",
+    "published_sha256": "bec32dcc978ea4ce3a583a5f8b320e19e0f8cea0371e01a9ddd9d5a5df93ffab"
+  },
+  {
+    "dataset": "sots_indoor",
+    "file": "split_manifest_train.csv",
+    "pairs": 11980,
+    "source_sha256": "fa8d983a376e517df5d4872a672142ef3f13790978226daf50b9779e6cb50bae",
+    "published_sha256": "2ecb64ce48ca75e6d1b159b32e3d90881fa2c89ed79a9da1397e40b118b14fac"
+  },
+  {
+    "dataset": "sots_indoor",
+    "file": "split_manifest_val.csv",
+    "pairs": 630,
+    "source_sha256": "ac942e422f09a7a6ee21e9b873ea1340b7eacee6212938ae4e44c0be517fc9ac",
+    "published_sha256": "39df19d91d6e02c30cbb73a1f551e10a6b7ae7413624c654c96f9a4af06f80ce"
+  },
+  {
+    "dataset": "sots_outdoor",
+    "file": "split_manifest_test_reserved.csv",
+    "pairs": 0,
+    "source_sha256": "9217a5a9ed4a9063912e4d27b5870408b498d261f586ec8b35a8adf6ff84a4ef",
+    "published_sha256": "bec32dcc978ea4ce3a583a5f8b320e19e0f8cea0371e01a9ddd9d5a5df93ffab"
+  },
+  {
+    "dataset": "sots_outdoor",
+    "file": "split_manifest_train.csv",
+    "pairs": 65798,
+    "source_sha256": "6445d5f4c4afcc223301441ebf5f577d8a39047ae0dd05d43d714a8d2c75a90b",
+    "published_sha256": "0e00cc46252c760b103e029b9368b7cc6f9503ab3f1812962978a56c18cff12c"
+  },
+  {
+    "dataset": "sots_outdoor",
+    "file": "split_manifest_val.csv",
+    "pairs": 665,
+    "source_sha256": "6c47d86be64cc28d50e9d3bf7e37f77bb2742ce49b10c529973ba81acbcccd39",
+    "published_sha256": "27c6c3a1abfa34369c3a8dded07ff73c0ddf4a39ecb326d1179512f28bc43673"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  "tile1024_stride512",
+  "tile768_stride384",
+  "tile640_stride320",
+  "tile512_stride256",
+  "tile384_stride192",
+  "tile320_stride160",
+  "tile256_stride128",
+  "resize256"
+]

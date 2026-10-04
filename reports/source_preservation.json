@@ -1,0 +1,125 @@
+{
+  "archive": "MSDSPDD_FINAL_FULL_20260812.tar.gz",
+  "unchanged_source_files": [
+    {
+      "path": "future_process/__init__.py",
+      "sha256": "db31cc8e8035c24a03a7a0ef18c9db85759bb0e618a4a2cbec07bb05d5d9dfc7",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/__init__.py",
+      "sha256": "1850012917b18904a13f0936a23feb2fd4909250c0bc17d14e148722a9c6c675",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/backbone.py",
+      "sha256": "027a0bad8beea923d0992d3d75a9033bdd14e7e3fdb1e60f9b6561b250b40ccd",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/cls.py",
+      "sha256": "c5c8367085f4f774b98f3c32d97a8b0c368427a38d8910e6c5dc00cc60e100ec",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/dc_ae.py",
+      "sha256": "51c5cd22aeac737c677c1b1d809ef051da41915248ced7742eac316a7da7dded",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/sam.py",
+      "sha256": "8f208f0fddd04cc20543f8a9acedf334fdf14a0ce7dfe59b4d256a226cd0c991",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/efficientvit/seg.py",
+      "sha256": "180dcd467b2ba7ad878831bb0dbe3f7a8fa50612c33c8250ecc4ff4eed6eeb93",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/losses.py",
+      "sha256": "b39c3968eeaa123860cbdaf7706f0074f3ffd51e5c761cacf1d8e637c75bc7dc",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/model.py",
+      "sha256": "0c91c686ebd3eeaeae01adde481af3ab694c3af45dad56abfa3afb45a394fc9d",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "future_process/vmamba.py",
+      "sha256": "00ce75a4ade90d89e8e3072f2150d95619db520dc000574b2a5425aa15bc6361",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "generate_prior/__init__.py",
+      "sha256": "62bac034bc89b55c020121dbceb00841d9d09c8ad4c236238df509b333ea465f",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "generate_prior/generate_prior.py",
+      "sha256": "46c1f325e2fba7945de29be80a744cbc109e081a09569b46e8bae1ce6b656a64",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "isp/__init__.py",
+      "sha256": "baaaf23c64561fe244ee0f1bd621bf5b65af59588ae93d7b1d3009e48f687fea",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "isp/image_process_tools.py",
+      "sha256": "29874398f07e7841c6f32ce3b3b5eed7bb4f7be14fcaf6a1a4bb9748d14dcdd8",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "msdspdd_complete_general.py",
+      "sha256": "4bbbde015aac8d4f7c2b9e3568fa156c54fb52c05738df3a8c6200c0aea2b7e1",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/finetune_msdspdd_v2_5datasets.py",
+      "sha256": "b30356153b3154fce746b34c6c9c13fd55b90133a66722c73d9dcce216e27981",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/finetune_msdspdd_v2_5datasets_epoch_checked_clean.py",
+      "sha256": "d8a2cbb1c9442d01913ff709831b99b277b80bbc107f4c954c3dd08f33e6762b",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/finetune_msdspdd_v2_5datasets_epoch_final.py",
+      "sha256": "73c4d49f336ebecf39e12f879e5c1a6636508a39e5c322bf5e84ea18feb24a9f",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/smoke_test_final.py",
+      "sha256": "d5f0d495995a5ac50db07886d4505aec72c5131b27c3e02d70b75c8d232d696a",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/test_msdspdd_v2_all_protocols_4metrics.py",
+      "sha256": "9fd8c8004128fd084d9aa204376323b4284de535860a6efbf8fb0081dccec8d6",
+      "preserved_verbatim": true
+    },
+    {
+      "path": "legacy/original_entrypoints/train_integration_example.py",
+      "sha256": "b730dfdcb85d28857d79e545012ac4f8482424a8554684b2e78ee9f1bef85f92",
+      "preserved_verbatim": true
+    }
+  ],
+  "modified_driver_mapping": {
+    "finetune.py": "finetune_msdspdd_v2_5datasets_epoch_checked_clean.py",
+    "evaluate.py": "test_msdspdd_v2_all_protocols_4metrics.py"
+  },
+  "modifications": [
+    "repository-relative default paths",
+    "evaluation --split_root separated from checkpoint directory",
+    "legacy checkpoint cleanup is opt-in"
+  ],
+  "excluded_generated_files": [
+    "__pycache__",
+    ".ipynb_checkpoints",
+    ".idea",
+    "identical trailing-space filename duplicate"
+  ]
+}
