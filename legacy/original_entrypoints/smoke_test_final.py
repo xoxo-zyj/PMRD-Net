@@ -3,12 +3,12 @@
 
 import torch
 
-from future_process import MSDSPDDCompositeLoss, MSDSPDDDehazer
+from future_process import PMRD-NetCompositeLoss, PMRD-NetDehazer
 
 
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = MSDSPDDDehazer(
+    model = PMRD-NetDehazer(
         enable_end_to_end=True,
         weight_path="./future_process/efficientvit_b1_r256.pt",
         use_mamba=torch.cuda.is_available(),
@@ -20,7 +20,7 @@ def main():
     clean = torch.rand(1, 3, 64, 64, device=device)
     outputs = model(hazy)
 
-    criterion = MSDSPDDCompositeLoss().to(device)
+    criterion = PMRD-NetCompositeLoss().to(device)
     loss, terms = criterion(
         outputs,
         hazy,
