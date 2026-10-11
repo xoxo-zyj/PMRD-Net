@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Composite training losses for MSDSPDDDehazer Final."""
+"""Composite training losses for PMRD-NetDehazer Final."""
 
 from __future__ import annotations
 
@@ -138,7 +138,7 @@ class MultiScaleVisualPerceptualLoss(nn.Module):
         return total / max(normalizer, 1e-8)
 
 
-class MSDSPDDCompositeLoss(nn.Module):
+class PMRD-NetCompositeLoss(nn.Module):
     """
     Full loss requested by the user:
     reconstruction + structure + visual perception + edge + color + physics
