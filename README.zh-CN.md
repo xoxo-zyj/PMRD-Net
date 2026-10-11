@@ -1,6 +1,14 @@
-# MSDSPDD
 
-基于互补先验、五路功能响应、动态路由、门控重建与残差精修的图像去雾实现。
+# PMRD-Net
+
+**Physics-Prior-Guided Multi-Response Dynamic Network for Single Image Dehazing**
+
+**中文名称：物理先验引导的多响应动态单幅图像去雾网络**
+
+本仓库提供 PMRD-Net 的模型实现及相关评估资源。
+
+PMRD-Net 通过互补物理先验估计与自适应校准、多响应动态路由、透射率门控渐进重建，以及物理引导的结构保持精修，实现对不同区域退化特征的自适应恢复。
+
 
 [English](README.md) · [安装](docs/INSTALL.md) · [数据集](docs/DATASETS.md) ·
 [权重](checkpoints/README.md) · [上传 GitHub](docs/GITHUB_UPLOAD.zh-CN.md)
@@ -21,7 +29,7 @@
 ## 使用步骤
 
 1. 按 [INSTALL.md](docs/INSTALL.md) 安装匹配的 PyTorch、EfficientViT 与 selective-scan CUDA 扩展。
-2. 把权重包中的 `MSDSPDD/` 合并到代码仓库的 `MSDSPDD/`，运行权重校验。
+2. 把权重包中的 `PMRD-Net/` 合并到代码仓库的 `PMRD-Net/`，运行权重校验。
 3. 根据本机数据目录生成可用清单，然后先检查划分，再训练或测试。
 
 ```bash
