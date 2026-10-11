@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-MSDSPDD Complete V2 - General Training
+PMRD-Net Complete V2 - General Training
 ======================================
 
 This script is adapted from the user's existing crop256 training code.
@@ -12,8 +12,8 @@ Training stages:
              the learnable prior fusion layer with separate learning rates.
 
 Expected project layout:
-    MSDSPDD_Final_Full/
-    ├── train_msdspdd_final_full.py
+    PMRD-Net_Final_Full/
+    ├── train_PMRD-Net_final_full.py
     ├── future_process/
     │   ├── model.py
     │   ├── losses.py
@@ -71,10 +71,10 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-# Split-package model actually present in MSDSPDD_Final_Full:
+# Split-package model actually present in PMRD-Net_Final_Full:
 # generate_prior -> ISP -> five routes -> reconstruction -> refinement.
-from future_process.model import MSDSPDDDehazer
-from future_process.losses import MSDSPDDCompositeLoss
+from future_process.model import PMRD-NetDehazer
+from future_process.losses import PMRD-NetCompositeLoss
 
 warnings.filterwarnings("ignore")
 
@@ -158,7 +158,7 @@ DATA_CONFIG = {
 
     "pair_report_dir": str(
         PROJECT_ROOT
-        / "checkpoints_msdspdd_v2_general"
+        / "checkpoints_PMRD-Net_v2_general"
         / "pair_reports"
     ),
 }
@@ -665,7 +665,7 @@ def unique_trainable_parameters(
     return output
 
 
-def late_backbone_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
+def late_backbone_modules(model: PMRD-NetDehazer) -> List[nn.Module]:
     """
     EfficientViT mapping in the complete model:
         stem       -> H/2
@@ -694,7 +694,7 @@ def late_backbone_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
     return modules
 
 
-def new_reconstruction_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
+def new_reconstruction_modules(model: PMRD-NetDehazer) -> List[nn.Module]:
     return [
         model.extractor.response_encoder,
         model.extractor.route_adapters,
@@ -715,7 +715,7 @@ def new_reconstruction_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
     ]
 
 
-def build_optimizer(model: MSDSPDDDehazer) -> torch.optim.Optimizer:
+def build_optimizer(model: PMRD-NetDehazer) -> torch.optim.Optimizer:
     used_ids: set = set()
 
     new_params = unique_trainable_parameters(
@@ -779,7 +779,7 @@ def build_optimizer(model: MSDSPDDDehazer) -> torch.optim.Optimizer:
 
 
 def configure_training_stage(
-    model: MSDSPDDDehazer,
+    model: PMRD-NetDehazer,
     epoch: int,
     verbose: bool = True,
 ) -> str:
@@ -929,7 +929,7 @@ def validate_environment_paths() -> None:
     print(f"   训练集: {DATA_CONFIG['train_hazy_root']}")
     print(f"   验证集: {DATA_CONFIG['val_hazy_root']}")
     print(f"   GT目录: {DATA_CONFIG['gt_root']}")
-    print(f"   输出目录: {PROJECT_ROOT / 'checkpoints_msdspdd_v2_general'}")
+    print(f"   输出目录: {PROJECT_ROOT / 'checkpoints_PMRD-Net_v2_general'}")
 
 
 # =============================================================================
@@ -942,7 +942,7 @@ def train() -> None:
 
     validate_environment_paths()
 
-    model = MSDSPDDDehazer(
+    model = PMRD-NetDehazer(
         enable_end_to_end=True,
         weight_path=DATA_CONFIG["efficientvit_weight"],
         route_temperature=TRAIN_CONFIG["route_temperature_start"],
@@ -981,7 +981,7 @@ def train() -> None:
         else None
     )
 
-    criterion = MSDSPDDCompositeLoss(
+    criterion = PMRD-NetCompositeLoss(
         final_recon_weight=LOSS_CONFIG["final_recon_weight"],
         base_recon_weight=LOSS_CONFIG["base_recon_weight"],
         ssim_weight=LOSS_CONFIG["ssim_weight"],
@@ -1038,7 +1038,7 @@ def train() -> None:
     if gt_test.max() < 0.9:
         print("⚠️ GT最大值偏低，请检查数据。")
 
-    checkpoint_dir = PROJECT_ROOT / "checkpoints_msdspdd_v2_general"
+    checkpoint_dir = PROJECT_ROOT / "checkpoints_PMRD-Net_v2_general"
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     resume_path = checkpoint_dir / "general_latest.pth"
     best_path = checkpoint_dir / "general_best.pth"
