@@ -1,7 +1,12 @@
-# MSDSPDD
 
-**Physics-guided image dehazing with complementary priors, five functional
-responses, dynamic routing, gated reconstruction and residual refinement.**
+# PMRD-Net
+
+**Physics-Prior-Guided Multi-Response Dynamic Network for Single Image Dehazing**
+
+This repository provides the implementation and evaluation resources of PMRD-Net, a physics-prior-guided multi-response dynamic network for single-image dehazing.
+
+PMRD-Net combines complementary physical-prior calibration, dynamic multi-response routing, transmission-gated progressive reconstruction, and physics-guided structure-preserving refinement.
+
 
 [中文说明](README.zh-CN.md) · [Installation](docs/INSTALL.md) ·
 [Datasets](docs/DATASETS.md) · [Checkpoints](checkpoints/README.md) ·
