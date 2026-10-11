@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-MSDSPDD Complete V2：五数据集独立专项微调
+PMRD-Net Complete V2：五数据集独立专项微调
 ============================================================
 
 用途
@@ -33,23 +33,23 @@ MSDSPDD Complete V2：五数据集独立专项微调
 
 建议放置位置
 ------------
-/root/autodl-tmp/MSDSPDD_Final_Full/finetune_msdspdd_v2_5datasets.py
+/root/autodl-tmp/PMRD-Net_Final_Full/finetune_PMRD-Net_v2_5datasets.py
 
 默认输入
 --------
 通用新模型权重：
-/root/autodl-tmp/MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/general_best.pth
+/root/autodl-tmp/PMRD-Net_Final_Full/checkpoints_PMRD-Net_v2_general/general_best.pth
 
 复用划分：
 /root/autodl-fs/FDE_dataset_finetune/<task>/split_manifest_*.csv
 
 默认输出
 --------
-/root/autodl-fs/MSDSPDD_V2_finetune_5datasets_epoch_final/<task>/
+/root/autodl-fs/PMRD-Net_V2_finetune_5datasets_epoch_final/<task>/
 
 注意
 ----
-- 本脚本导入的是 future_process.model.MSDSPDDDehazer，属于当前 Complete V2，
+- 本脚本导入的是 future_process.model.PMRD-NetDehazer，属于当前 Complete V2，
   不是旧 FDE 模型。
 - 默认 AMP 关闭。
 - 不要对 SOTS 官方测试图进行训练或验证。
@@ -89,8 +89,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from future_process.model import MSDSPDDDehazer
-from future_process.losses import MSDSPDDCompositeLoss
+from future_process.model import PMRD-NetDehazer
+from future_process.losses import PMRD-NetCompositeLoss
 
 try:
     from pytorch_msssim import ssim as msssim_ssim
@@ -140,12 +140,12 @@ TASKS: Dict[str, Dict] = {
 }
 
 DEFAULT_BASE_CKPT = (
-    "/root/autodl-tmp/MSDSPDD_Final_Full/"
-    "checkpoints_msdspdd_v2_general/general_best.pth"
+    "/root/autodl-tmp/PMRD-Net_Final_Full/"
+    "checkpoints_PMRD-Net_v2_general/general_best.pth"
 )
 DEFAULT_SPLIT_ROOT = "/root/autodl-fs/FDE_dataset_finetune"
-DEFAULT_OUTPUT_ROOT = "/root/autodl-fs/MSDSPDD_V2_finetune_5datasets_epoch_final"
-DEFAULT_OLD_STEP_OUTPUT_ROOT = "/root/autodl-fs/MSDSPDD_V2_finetune_5datasets"
+DEFAULT_OUTPUT_ROOT = "/root/autodl-fs/PMRD-Net_V2_finetune_5datasets_epoch_final"
+DEFAULT_OLD_STEP_OUTPUT_ROOT = "/root/autodl-fs/PMRD-Net_V2_finetune_5datasets"
 
 # 通用模型训练完成后，专项微调采用更低学习率。
 LR_CONFIG = {
@@ -568,7 +568,7 @@ def unique_parameters(
     return output
 
 
-def late_backbone_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
+def late_backbone_modules(model: PMRD-NetDehazer) -> List[nn.Module]:
     backbone = model.extractor.backbone
     modules: List[nn.Module] = []
     if hasattr(backbone, "stages"):
@@ -587,7 +587,7 @@ def late_backbone_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
     return modules
 
 
-def new_reconstruction_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
+def new_reconstruction_modules(model: PMRD-NetDehazer) -> List[nn.Module]:
     return [
         model.extractor.response_encoder,
         model.extractor.route_adapters,
@@ -608,12 +608,12 @@ def new_reconstruction_modules(model: MSDSPDDDehazer) -> List[nn.Module]:
     ]
 
 
-def create_model(device: torch.device) -> MSDSPDDDehazer:
+def create_model(device: torch.device) -> PMRD-NetDehazer:
     weight_path = PROJECT_ROOT / "future_process" / "efficientvit_b1_r256.pt"
     if not weight_path.is_file():
         raise FileNotFoundError(f"EfficientViT 权重不存在: {weight_path}")
 
-    model = MSDSPDDDehazer(
+    model = PMRD-NetDehazer(
         enable_end_to_end=True,
         weight_path=str(weight_path),
         route_temperature=1.0,
@@ -642,7 +642,7 @@ def finetune_stage_name(
 
 
 def configure_finetune_stage(
-    model: MSDSPDDDehazer,
+    model: PMRD-NetDehazer,
     epoch_number: int,
     stage2_epoch: int,
     stage3_epoch: int,
@@ -681,7 +681,7 @@ def configure_finetune_stage(
 
 
 def configure_finetune_optimizer(
-    model: MSDSPDDDehazer,
+    model: PMRD-NetDehazer,
     weight_decay: float,
     lr_scale: float,
 ) -> torch.optim.Optimizer:
@@ -736,8 +736,8 @@ def freeze_batch_norm(model: nn.Module) -> None:
             module.eval()
 
 
-def create_criterion(device: torch.device) -> MSDSPDDCompositeLoss:
-    criterion = MSDSPDDCompositeLoss(
+def create_criterion(device: torch.device) -> PMRD-NetCompositeLoss:
+    criterion = PMRD-NetCompositeLoss(
         final_recon_weight=LOSS_CONFIG["final_recon_weight"],
         base_recon_weight=LOSS_CONFIG["base_recon_weight"],
         ssim_weight=LOSS_CONFIG["ssim_weight"],
@@ -1087,7 +1087,7 @@ def build_checkpoint(
     training_finished: bool,
 ) -> Dict:
     return {
-        "model_name": "MSDSPDD Complete V2",
+        "model_name": "PMRD-Net Complete V2",
         "task": task_name,
         "display_name": task_cfg["display_name"],
         "epoch": int(epoch),
@@ -1766,7 +1766,7 @@ def train_one_task(
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="MSDSPDD Complete V2 五数据集独立专项微调（epoch最终版）"
+        description="PMRD-Net Complete V2 五数据集独立专项微调（epoch最终版）"
     )
     parser.add_argument(
         "--dataset",
@@ -1847,7 +1847,7 @@ def main() -> None:
     selected = list(TASK_ORDER) if args.dataset == "all" else [args.dataset]
 
     print("\n" + "=" * 100)
-    print("MSDSPDD Complete V2 五数据集独立专项微调（epoch最终版）")
+    print("PMRD-Net Complete V2 五数据集独立专项微调（epoch最终版）")
     print(f"project root : {PROJECT_ROOT}")
     print(f"base ckpt    : {base_ckpt}")
     print(f"split root   : {split_root}")
