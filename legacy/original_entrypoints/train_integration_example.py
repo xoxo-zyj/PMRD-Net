@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """Minimal integration fragment for the existing training loop."""
 
-from future_process import MSDSPDDCompositeLoss, MSDSPDDDehazer
+from future_process import PMRD-NetCompositeLoss, PMRD-NetDehazer
 
-model = MSDSPDDDehazer(
+model = PMRD-NetDehazer(
     enable_end_to_end=True,
     weight_path="./future_process/efficientvit_b1_r256.pt",
 )
-criterion = MSDSPDDCompositeLoss()
+criterion = PMRD-NetCompositeLoss()
 
 # In each training iteration:
 # outputs = model(hazy)
