@@ -14,7 +14,7 @@ PMRD-Net combines complementary physical-prior calibration, dynamic multi-respon
 
 ![Architecture from the original archive](docs/assets/architecture.png)
 
-This repository was organized from `MSDSPDD_FINAL_FULL_20260812.tar.gz`.
+This repository was organized from `PMRD-Net_FINAL_FULL_20260812.tar.gz`.
 All model and loss implementation files are preserved verbatim. The active
 training/evaluation drivers have portable default paths; old checkpoint
 cleanup requires an explicit flag. All original entrypoints remain in
@@ -72,9 +72,9 @@ single-protocol benchmark. Select a protocol independently for formal reporting.
 ## Repository layout
 
 ```text
-MSDSPDD/
+PMRD-Net/
 ├── finetune.py / evaluate.py / smoke_test.py
-├── msdspdd_complete_general.py   # original single-file model and loss
+├── PMRD-Net_complete_general.py   # original single-file model and loss
 ├── future_process/              # original modular implementation
 ├── generate_prior/ / isp/
 ├── tools/                       # splits, environment and integrity checks
@@ -89,9 +89,9 @@ MSDSPDD/
 
 | Asset | Contents |
 | --- | --- |
-| `MSDSPDD_GitHub_Repository.zip` | Code, docs, splits, history and checks |
-| `MSDSPDD_Model_Weights.zip` | Backbone + general best + five model-only checkpoints |
-| `MSDSPDD_Training_Archive.zip` | Original remaining best/latest states and general pairing reports |
+| `PMRD-Net_GitHub_Repository.zip` | Code, docs, splits, history and checks |
+| `PMRD-Net_Model_Weights.zip` | Backbone + general best + five model-only checkpoints |
+| `PMRD-Net_Training_Archive.zip` | Original remaining best/latest states and general pairing reports |
 
 Extract the repository ZIP for a GitHub code upload. Publish large weight
 assets through GitHub Releases; do not commit the ZIPs or checkpoints to Git.
