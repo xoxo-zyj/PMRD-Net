@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-MSDSPDDDehazer Final
+PMRD-NetDehazer Final
 ====================
 
 Final architecture requested by the user:
@@ -832,7 +832,7 @@ class ResidualRefiner(nn.Module):
 # Main model
 # -----------------------------------------------------------------------------
 
-class MSDSPDDDehazer(nn.Module):
+class PMRD-NetDehazer(nn.Module):
     ROUTE_NAMES = FiveRouteEfficientViTEncoder.ROUTE_NAMES
 
     def __init__(
