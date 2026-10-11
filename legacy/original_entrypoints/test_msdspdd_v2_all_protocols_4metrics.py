@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""MSDSPDD Complete V2 六数据集×八协议专项权重正式测试。
+"""PMRD-Net Complete V2 六数据集×八协议专项权重正式测试。
 
 - I/O/NH-HAZE：只测微调时保留的 test_reserved 清单。
 - SOTS-Indoor/Outdoor：测官方 SOTS 测试集。
@@ -38,7 +38,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from future_process.model import MSDSPDDDehazer  # noqa: E402
+from future_process.model import PMRD-NetDehazer  # noqa: E402
 from skimage.metrics import structural_similarity as skimage_ssim
 try:
     import pyiqa
@@ -51,9 +51,9 @@ TASK = {
     "SOTS-indoor": "sots_indoor", "SOTS-outdoor": "sots_outdoor",
 }
 IMG_EXTS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp"}
-DEFAULT_FINETUNE = "/root/autodl-fs/MSDSPDD_V2_finetune_5datasets_epoch_final"
-DEFAULT_GENERAL = "/root/autodl-tmp/MSDSPDD_Final_Full/checkpoints_msdspdd_v2_general/general_best.pth"
-DEFAULT_OUTPUT = "/root/autodl-fs/MSDSPDD_V2_finetuned_formal_test"
+DEFAULT_FINETUNE = "/root/autodl-fs/PMRD-Net_V2_finetune_5datasets_epoch_final"
+DEFAULT_GENERAL = "/root/autodl-tmp/PMRD-Net_Final_Full/checkpoints_PMRD-Net_v2_general/general_best.pth"
+DEFAULT_OUTPUT = "/root/autodl-fs/PMRD-Net_V2_finetuned_formal_test"
 
 
 def clear_cuda():
@@ -210,7 +210,7 @@ def create_model(device, project_root: Path):
     weight = project_root / "future_process" / "efficientvit_b1_r256.pt"
     if not weight.is_file():
         raise FileNotFoundError(f"EfficientViT 权重不存在：{weight}")
-    model = MSDSPDDDehazer(
+    model = PMRD-NetDehazer(
         enable_end_to_end=True, weight_path=str(weight), route_temperature=1.0,
         use_mamba=True, enable_refiner=True, allow_backbone_fallback=False,
     ).to(device).eval()
@@ -978,7 +978,7 @@ def best_protocol_rows(summary_rows):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        "MSDSPDD V2 six-dataset all-protocol evaluation"
+        "PMRD-Net V2 six-dataset all-protocol evaluation"
     )
 
     parser.add_argument(
@@ -995,7 +995,7 @@ def parse_args():
     )
     parser.add_argument(
         "--project_root",
-        default="/root/autodl-tmp/MSDSPDD_Final_Full",
+        default="/root/autodl-tmp/PMRD-Net_Final_Full",
         type=str,
     )
     parser.add_argument(
@@ -1012,7 +1012,7 @@ def parse_args():
         "--output_root",
         default=(
             "/root/autodl-fs/"
-            "MSDSPDD_V2_finetuned_all_protocols_4metrics"
+            "PMRD-Net_V2_finetuned_all_protocols_4metrics"
         ),
         type=str,
     )
@@ -1162,7 +1162,7 @@ def main():
     project_root = Path(args.project_root)
     if project_root.resolve() != PROJECT_ROOT.resolve():
         raise RuntimeError(
-            "请把本脚本放在MSDSPDD_Final_Full工程根目录。"
+            "请把本脚本放在PMRD-Net_Final_Full工程根目录。"
             f"\n脚本目录={PROJECT_ROOT}"
             f"\n--project_root={project_root}"
         )
@@ -1193,7 +1193,7 @@ def main():
     torch.backends.cudnn.benchmark = True
 
     print("\n" + "=" * 112)
-    print("MSDSPDD Complete V2：六数据集×八协议正式测试")
+    print("PMRD-Net Complete V2：六数据集×八协议正式测试")
     print("=" * 112)
     print("device       :", device)
     print("datasets     :", selected_datasets)
